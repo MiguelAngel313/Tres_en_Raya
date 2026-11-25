@@ -1,0 +1,39 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(253, 231, 201);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#tablero{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+
+
+
+#casilla{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(184, 167, 144);
+    border-radius: 10%;
+    box-shadow: 4px 4px 4px rgb(128, 116, 99);
+    scale: 1;
+    transition: transform 0.1s ease;
+}
+
+
+#casilla:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
